@@ -79,6 +79,17 @@ a{
     width: 100%;
 }
 
+
+@keyframes productani01{
+    0%, 100%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(-15px);
+
+    }
+}
+
 /* Header Section */
 .header{
     border-bottom: 1px solid rgba(255,255,255,0.2 );
@@ -132,6 +143,15 @@ a{
 
 }
 
-.home-section.home-content .btn{
+.home-section .home-img{
+    position: relative;
+}
 
+.home-section .home-img img{
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    left: 150px;
+    top: -50px;
+    animation: productani01 5s linear infinite;
 }
