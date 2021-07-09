@@ -90,6 +90,40 @@ a{
     }
 }
 
+@keyframes shapeani01 {
+    0%, 100%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(50px);
+
+    }
+}
+
+
+@keyframes shapeani02 {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes shapeani03 {
+    0%, 100%{
+        transform: scale(0.5);
+    }
+
+    50%{
+        transform: scale(1);
+
+    }
+}
+
 /* Header Section */
 .header{
     border-bottom: 1px solid rgba(255,255,255,0.2 );
@@ -124,6 +158,23 @@ a{
 
 .home-section{
     padding: 250px 0 200px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-section::before{
+    content: '';
+    position: absolute;
+    height: 130px;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background-image: url("../img/shape-bg.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .home-section .home-content h1{
@@ -155,3 +206,64 @@ a{
     top: -50px;
     animation: productani01 5s linear infinite;
 }
+
+.home-section .bg-shapes div{
+    position: absolute;
+    opacity: 0.09;
+}
+.home-section .bg-shapes div:nth-child(1){
+   width: 100px; 
+   height: 100px;
+   background-color: #ffff;
+   border-radius: 50%;
+   top: 20%;
+   left: 20%;
+   animation: shapeani01 5s linear infinite;
+}
+
+.home-section .bg-shapes div:nth-child(2){
+    width: 80px; 
+    height: 80px;
+    top: 60%;
+    left: 58%;
+    background-color: transparent;
+    border-radius: 50%;
+    border:5px solid #ffff;
+    border-bottom: 5px solid transparent;
+    animation: shapeani02 7s linear infinite;
+ }
+
+ .home-section .bg-shapes div:nth-child(3){
+    width: 60px; 
+    height: 60px;
+    top: 10%;
+    left: 90%;
+    background-color: transparent;
+    border-radius: 50%;
+    border:5px solid #ffff;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    animation: shapeani02 7s linear infinite;
+ }
+
+ .home-section .bg-shapes div:nth-child(4){
+    width: 200px; 
+    height: 200px;
+    top: 40%;
+    left:calc(100% - 100px);
+    background-color: #fff;
+    border-radius: 50%;
+    animation: shapeani03 7s linear infinite;
+ }
+
+ .home-section .bg-shapes div:nth-child(5){
+    width: 100px; 
+    height: 100px;
+    top: 40%;
+    left:calc(0% - 50px);
+    background-color: transparent;
+    border: 5px solid #fff;
+    animation: shapeani02 10s linear infinite;
+ }
+
+
