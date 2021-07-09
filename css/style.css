@@ -44,7 +44,45 @@ a{
     border-radius: 50%;
 }
 
+.mybtn1{
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 36px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.mybtn1:focus{
+    box-shadow: none;
+}
+
+.mybtn1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background-color: rgba(0,0,0,0.1);
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.mybtn1:hover::before{
+    width: 100%;
+}
+
 /* Header Section */
+.header{
+    border-bottom: 1px solid rgba(255,255,255,0.2 );
+}
 .header .navbar{
     padding: 0;
 }
@@ -74,6 +112,26 @@ a{
 /* Home Section */
 
 .home-section{
-    background-color: blue;
     padding: 250px 0 200px;
+}
+
+.home-section .home-content h1{
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.home-section .home-content p{
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+
+}
+
+.home-section.home-content .btn{
+
 }
