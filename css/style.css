@@ -374,28 +374,46 @@ a{
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
+    transition: all 0.5s ease;
 }
+
+.feauter-section .features-item:hover{
+    transform: translateY(-10px);
+}
+
+
 .feauter-section .features-item .icon{
     margin-bottom: 25px;
 }
+
 .feauter-section .features-item .icon i{
     font-size: 40px;
     display: inline-block;
+    transition: all 0.5s ease;
+
 }
+
 .feauter-section .features-item h3{
     font-size: 22px;
     font-weight: 600;
     color: #222;
     margin: 0 0 15px;
     line-height: 30px;
-
+    transition: all 0.5s ease;
 }
+
 .feauter-section .features-item p{
     font-size: 16px;
     line-height: 26px;
     color: #555;
     margin: 0;
+    transition: all 0.5s ease;
 }
 
+.feauter-section .features-item:hover .icon i,
+.feauter-section .features-item:hover h3,
+.feauter-section .features-item:hover p{
+    color: #fff;
+}
 
 
