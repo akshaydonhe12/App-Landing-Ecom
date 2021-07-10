@@ -364,5 +364,38 @@ a{
 
 .feauter-section{
     background-color: #f5f5ff;
-    padding: 80px 0 80px;
+    padding: 80px 0 50px;
 }
+
+.feauter-section .features-item{
+    box-shadow: 0 0 10px #dddde3;
+    padding: 40px  30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.feauter-section .features-item .icon{
+    margin-bottom: 25px;
+}
+.feauter-section .features-item .icon i{
+    font-size: 40px;
+    display: inline-block;
+}
+.feauter-section .features-item h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 15px;
+    line-height: 30px;
+
+}
+.feauter-section .features-item p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #555;
+    margin: 0;
+}
+
+
+
