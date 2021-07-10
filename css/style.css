@@ -267,3 +267,18 @@ a{
  }
 
 
+/* About Section */
+
+.about-section{
+    background-color: #fff;
+    padding: 80px 0 80px;
+}
+
+.about-section .about-img{
+    margin: auto;
+}
+
+.about-section .about-img img{
+    max-width: 350px;
+    width: 100%;
+}
