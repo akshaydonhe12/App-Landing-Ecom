@@ -528,4 +528,34 @@ a{
     margin-top:-13px;
 }
 
+/* Testimonials Section */
 
+.testimonial-section{
+    padding: 80px 0 80px;
+    background-image: url(../img/bg-01.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+
+}
+
+.testimonial-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;   
+    opacity: 0.7;
+}
+
+.testimonial-section .section-title .title,
+.testimonial-section .section-title .subtitle{
+   color: #fff;
+}
+
+.testimonial-section .section-title .title::before{
+    background-color: #fff;
+ }
