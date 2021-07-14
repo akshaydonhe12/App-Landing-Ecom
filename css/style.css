@@ -425,6 +425,7 @@ a{
 
 .products-section .products-item{
     box-shadow: 0 0 10px #dddde3;
+    margin: 15px 0;
 }
 
 .products-section .product-img{
